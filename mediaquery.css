@@ -1,0 +1,199 @@
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: darkblue;
+  }
+
+  .icons a {
+    display: none;
+  }
+
+  header {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  header nav {
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-content: center;
+    justify-content: start;
+    gap: 25px;
+  }
+
+  main {
+    padding: 15px 25px;
+  }
+
+  .movies-wrapper {
+    grid-template-columns: repeat(3, minmax(225px, 300px));
+  }
+
+  footer {
+    padding: 15px 25px;
+    
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 50px;
+    justify-items: center;
+  }
+
+  footer > div:nth-child(1),
+  footer > div:nth-child(2) {
+    display: grid;
+
+    justify-self: start;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .nav{
+    display: flex;
+  }
+
+
+  .movies-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(225px, 300px));
+
+    /* grid-template-areas:  */
+
+
+
+    
+
+
+
+  }
+
+  .movie{
+    width: 300px;
+    height: 315px;
+  }
+
+  .movie img{
+    width: 300px;
+    height: 315px;
+    object-fit: cover;
+  }
+
+  /* .movie:nth-child(1){
+
+    grid-area: A;
+  }
+  .movie:nth-child(2){
+    grid-area: B;
+  }
+  .movie:nth-child(3){
+    grid-area: C;
+  }
+  .movie:nth-child(4){
+    grid-area: D;
+  }
+  .movie:nth-child(5){
+    grid-area: E;
+  }
+  .movie:nth-child(6){
+    grid-area: F;
+  }
+  .movie:nth-child(7){
+    grid-area: G;
+  }
+  .movie:nth-child(8){
+    grid-area: H;
+  } */
+
+  .cinema{
+    overflow: hidden;
+    height: 450px;
+    place-content: center;
+  }
+
+
+
+  .cinemas-wrapper{
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 450px;
+
+
+
+
+
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background-color: #144272;
+  }
+
+  header {
+    padding: 15px 50px;
+  }
+
+  .cinemas-wrapper {
+    grid-template-columns: 1fr 1fr;
+  } 
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    padding: 15px 100px;
+  }
+
+  main,
+  footer {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .movies-wrapper {
+    grid-template-columns: repeat(4, minmax(225px, 300px));
+    justify-content: center;
+
+
+
+  }
+  .movie{
+    width: 300px;
+    height: 325px;
+
+  }
+
+  .movie img{
+    width: 300px;
+    height: 325px;
+    object-fit: cover;
+  }
+
+
+
+  nav{
+    justify-content: center;
+  }
+
+  .cinema{
+    overflow: hidden;
+    height: 350px;
+    place-content: center;
+  }
+
+
+
+  .cinemas-wrapper{
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 350px;
+
+    margin-bottom: 5px;
+    /* position: relative;
+    bottom: 10px; */
+
+
+
+
+  }
+}
